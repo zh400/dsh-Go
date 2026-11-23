@@ -26,7 +26,7 @@ jobs:
         working-directory: app
         run: |
           flutter pub get
-          flutter build apk --release --target-platform android-arm64
+          flutter build apk --release --flavor arm64 --target-platform android-arm64
       - name: Collect
         run: |
           mkdir -p out
